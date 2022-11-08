@@ -1,0 +1,18 @@
+# Basics
+PORT=5000
+NODE_ENV="development"
+
+# Session
+SESSION_SECRET=abcdefghijklmnopqrstuvwxyz
+
+# Database
+DB_URL=
+
+# Cloudinaries
+CLOUDINARY_CLOUD_NAME=
+CLOUDINARY_KEY=
+CLOUDINARY_SECRET=
+ALLOWED_IMG_STORAGE= <   YOUR IMAGE STORE >
+
+# Mapbox
+MAPBOX_TOKEN=
