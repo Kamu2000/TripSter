@@ -5,5 +5,13 @@ COPY package*.json ./
 RUN npm install
 COPY . .
 ENV PORT=8080
+ENV NODE_ENV="development"
+ENV SESSION_SECRET=94636d5ff369611a8a9c003b0669bb75a900a050282c5c5efa1290b972825b18
+ENV DB_URL=mongodb+srv://kamu01:kamu1234@cluster0.to90rfg.mongodb.net/?retryWrites=true&w=majority
+ENV CLOUDINARY_CLOUD_NAME=drj5p0t0n
+ENV CLOUDINARY_KEY=424197716549167
+ENV CLOUDINARY_SECRET=j6Ry3QRBbemIyGlSlxrDN8uTlgA
+ENV ALLOWED_IMG_STORAGE $limit
+ENV MAPBOX_TOKEN=pk.eyJ1Ijoia2FtbGVzaDIwMDAiLCJhIjoiY2xhNWZ3MXVnMGkzbzNycWs1eDdib2huMyJ9.MrgXgjkyYZZwNSYGcdg3zg
 EXPOSE 8080
 CMD ["npm", "start"]
